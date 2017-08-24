@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+picture, img {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #303030; }
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fefefe; }
+  .wrapper a {
+    text-decoration: none; }
+
+.loggin, .registro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 40%;
+  margin-top: 20px; }
+  .loggin h1, .loggin h2, .registro h1, .registro h2 {
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    color: #EE1A00;
+    margin-bottom: 20px;
+    line-height: 1.5em; }
+  .loggin-form, .registro-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #EE1A00;
+    padding: 20px 0;
+    box-sizing: border-box; }
+    .loggin-form div, .registro-form div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      width: 90%;
+      height: 50px;
+      position: relative; }
+      .loggin-form div label, .registro-form div label {
+        font-size: 1em;
+        color: #EE1A00;
+        width: 100%;
+        position: absolute;
+        bottom: 0; }
+      .loggin-form div p, .registro-form div p {
+        font-size: .9em;
+        color: #EE1A00;
+        width: 100%; }
+      .loggin-form div input, .loggin-form div select, .registro-form div input, .registro-form div select {
+        border-style: none;
+        background-color: transparent;
+        outline-style: none;
+        border-bottom: 1px solid #EE1A00;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        color: #d51700; }
+        .loggin-form div input:focus, .loggin-form div select:focus, .registro-form div input:focus, .registro-form div select:focus {
+          border-bottom: 1px solid #a21200; }
+    .loggin-form .btns, .registro-form .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+      height: auto !important; }
+      .loggin-form .btns button, .loggin-form .btns a, .registro-form .btns button, .registro-form .btns a {
+        width: 45%; }
+
+@media screen and (max-width: 1000px) {
+  .loggin, .registro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: auto !important; }
+    .loggin-form, .registro-form {
+      width: 100%; }
+      .loggin-form .btns, .registro-form .btns {
+        display: flex;
+        flex-direction: column;
+        width: 90%; }
+        .loggin-form .btns button, .loggin-form .btns a, .registro-form .btns button, .registro-form .btns a {
+          width: 100%; }
+        .loggin-form .btns button, .registro-form .btns button {
+          margin-bottom: 10px; } }
+
+.perfilSocio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .perfilSocio-txt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0; }
+    .perfilSocio-txt h2 {
+      text-align: center;
+      color: #EE1A00;
+      font-size: 2em; }
+  .perfilSocio-form {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .perfilSocio-form-wrap {
+      width: 31%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px 0;
+      box-sizing: border-box;
+      border-radius: 5px; }
+      .perfilSocio-form-wrap h3 {
+        font-size: 1.5em;
+        color: #EE1A00; }
+      .perfilSocio-form-wrap div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: relative;
+        height: 50px; }
+        .perfilSocio-form-wrap div label, .perfilSocio-form-wrap div p, .perfilSocio-form-wrap div input, .perfilSocio-form-wrap div select {
+          width: 100%; }
+        .perfilSocio-form-wrap div label {
+          font-size: 1em;
+          color: #EE1A00;
+          width: 100%;
+          position: absolute;
+          bottom: 0; }
+        .perfilSocio-form-wrap div p {
+          font-size: .9em;
+          color: #EE1A00;
+          width: 100%; }
+        .perfilSocio-form-wrap div input, .perfilSocio-form-wrap div select {
+          border-style: none;
+          background-color: transparent;
+          outline-style: none;
+          border-bottom: 1px solid #EE1A00;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          color: #d51700; }
+          .perfilSocio-form-wrap div input:focus, .perfilSocio-form-wrap div select:focus {
+            border-bottom: 1px solid #a21200; }
+
+/*# sourceMappingURL=style.css.map */

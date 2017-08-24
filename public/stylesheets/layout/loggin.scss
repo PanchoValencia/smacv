@@ -1,0 +1,105 @@
+.loggin , .registro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+    margin-top: 20px;
+
+    h1 , h2{
+        width: 100%;
+        font-size: 1.8em;
+        text-align: center;
+        color: $rojo;
+        margin-bottom: 20px;
+        line-height: $interlineado;
+    }
+
+    &-form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $rojo;
+        padding: 20px 0;
+        box-sizing: border-box;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+
+            label {
+                font-size: 1em;
+                color: $rojo;
+                //font-weight: 700;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+            }
+            p{
+                font-size: .9em;
+                color: $rojo;
+                //font-weight: 700;
+                width: 100%;
+            }
+            input , select{
+                border-style: none;
+                background-color: transparent;
+                outline-style: none;
+                border-bottom: 1px solid $rojo;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                color: darken($rojo , 5);
+
+                &:focus{
+                    border-bottom: 1px solid darken($rojo, 15);
+                }
+            }
+        }
+        .btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            height: auto !important;
+            button , a{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width : 1000px )
+{
+    .loggin , .registro{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: auto !important;
+
+        &-form{
+            width: 100%;
+            .btns{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                button , a{
+                    width: 100%;
+                }
+                button{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

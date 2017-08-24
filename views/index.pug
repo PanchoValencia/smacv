@@ -1,0 +1,15 @@
+extends layout
+
+block append items
+    div.loggin
+        h1 SOCIEDAD MEXICANA DE ANGEOLOGÍA, CIRUGÍA VASCULAR Y ENDOVASCULAR, A.C.
+        form(action="http://localhost:3000/socios/perfil" method="post").loggin-form
+            div
+                label(for="logginUser") Usuario
+                input(required type="text" id="logginUser")
+            div
+                label(for="logginPass") Contraseña
+                input(required type="password" id="logginPass")
+            div.btns
+                button(id="logginBtn" class="btn btn-danger" type="submit") Iniciar Sesión
+                a(href="http://localhost:3000/registro" id="signUpBtn" class="btn btn-default") Regístrate

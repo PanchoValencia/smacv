@@ -1,0 +1,84 @@
+.perfilSocio{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-txt{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0;
+
+        h2{
+            text-align: center;
+            color: $rojo;
+            font-size: 2em;
+        }
+    }
+    &-form{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        &-wrap{
+            width: 31%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+            h3{
+                font-size: 1.5em;
+                color: $rojo;
+            }
+
+            div{
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                position: relative;
+                height: 50px;
+
+                label , p , input , select
+                {
+                    width: 100%;
+                }
+                label {
+                    font-size: 1em;
+                    color: $rojo;
+                    //font-weight: 700;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                }
+                p{
+                    font-size: .9em;
+                    color: $rojo;
+                    //font-weight: 700;
+                    width: 100%;
+                }
+                input , select{
+                    border-style: none;
+                    background-color: transparent;
+                    outline-style: none;
+                    border-bottom: 1px solid $rojo;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    color: darken($rojo , 5);
+
+                    &:focus{
+                        border-bottom: 1px solid darken($rojo, 15);
+                    }
+                }
+            }
+        }
+    }
+}

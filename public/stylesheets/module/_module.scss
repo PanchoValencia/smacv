@@ -1,0 +1,11 @@
+.wrapper{
+    width            : 100%;
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    background-color : $bgc-claro;
+
+    a{
+        text-decoration : none;
+    }
+}

@@ -1,0 +1,34 @@
+extends layout
+
+block append items
+    div.perfilSocio
+        div.perfilSocio-txt
+            h2 Mi Perfil
+        form(action="" method="post").perfilSocio-form
+            div.perfilSocio-form-wrap
+                h3 Información personal
+                div
+                    label(for="nombreSocio") Nombre(s)
+                    input(required type="text" id="nombreSocio")
+                div
+                    label(for="apellidoPSocio") Apellido paterno
+                    input(required type="text" id="apellidoPSocio")
+                div
+                    label(for="apellidoMSocio") Apellido materno
+                    input(required type="text" id="apellidoMSocio")
+                div
+                    label(for="generoSocio") Género
+                    select(id="generoSocio")
+                        option() 
+                        option() Masculino
+                        option() Femenino
+                div
+                    label(for="rfcSocio") RFC
+                    input(required type="text" id="rfcSocio")
+                div
+                    p(for="fechaNacSocio") Fecha de nacimiento
+                    input(required type="date" id="fechaNacSocio")
+            
+            div.perfilSocio-form-wrap
+            div.perfilSocio-form-wrap
+            
